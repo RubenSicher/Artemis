@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #cc1616;
+  color: #dca01b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e82d2d;
+  color: #dca01b;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #cc1616;
+  background: #dca01b;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -55,7 +55,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #e72323;
+  background: #eec367;
   color: #fff;
 }
 
@@ -249,7 +249,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  background: #cc1616;
+  background: #dca01b;
 }
 
 .navbar .dropdown ul {
@@ -475,8 +475,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
+  background: #dca01b;
+  border-color: #dca01b;
 }
 
 @media (min-width: 1024px) {
@@ -605,7 +605,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ed5b5b;
+  color: #dca01b;
 }
 
 .why-us .box h4 {
@@ -624,7 +624,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #cc1616;
+  background: #dca01b;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -677,7 +677,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #cc1616;
+  background: #dca01b;
   transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
@@ -720,8 +720,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #cc1616;
-  border-color: #cc1616;
+  background: #dca01b;
+  border-color: #dca01b;
   padding: 70px 20px 90px 20px;
 }
 
@@ -730,11 +730,11 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #cc1616;
+  color: #dca01b;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #e82d2d;
+  background: #eec56e;
 }
 
 .services .icon-box:hover h4 a,
@@ -776,8 +776,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #cc1616;
-  border: 2px solid #cc1616;
+  background: #dca01b;
+  border: 2px solid #dca01b;
 }
 
 /*--------------------------------------------------------------
@@ -1024,7 +1024,7 @@ section {
 }
 
 .pricing .box .btn-buy {
-  background: #cc1616;
+  background: #dca01b;
   display: inline-block;
   padding: 10px 40px;
   color: #fff;
@@ -1037,11 +1037,11 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #e82d2d;
+  background: #e2b960;
 }
 
 .pricing .featured {
-  background: #cc1616;
+  background: #dca01b;
   box-shadow: none;
   color: #fff;
 }
@@ -1138,7 +1138,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #cc1616;
+  color: #dca01b;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f5a0a0;
@@ -1226,7 +1226,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #cc1616;
+  background: #dca01b;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1234,7 +1234,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #e82d2d;
+  background: #d8b15c;
 }
 
 @-webkit-keyframes animate-loading {
