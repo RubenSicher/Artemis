@@ -484,7 +484,7 @@
                 </div>
                 <div class="card-body">
                   <div class="chart">
-                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;" class="chartjs-render-monitor"></canvas>
                   </div>
                 </div>
                 <!-- /.card-body -->
@@ -497,7 +497,7 @@
               <!-- BAR CHART -->
               <div class="col-lg-6 align-items-stretch" data-aos="fade-up">
               <div class="card">
-                <div class="header">
+                <div class="m-2">
                   <h3 class="text-center">Temperaturas del mercado</h3>
                   <p class="card-title text-center" style="font-size:smaller;">Se basa en los cambios en la demanda de los inquilinos en comparación con el promedio nacional. 
                   </p>
@@ -505,7 +505,7 @@
                 </div>
                 <div class="card-body">
                   <div class="card-body">
-                    <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    <canvas id="donutChart" style="min-height: fit-content; height:fit-content; max-height: fit-content; max-width: 100%;"></canvas>
                   </div>
                 </div>
                 <!--/.card-body -->
@@ -518,16 +518,27 @@
               </div>
               <div class="col-lg-6 align-items-stretch" data-aos="fade-up">
               <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title text-center">Precios promedio 2021 - 2022</h3>
-  
+                <div class="m-2">
+                  <h3 class="card-title text-center">Comparación de renta promedio</h3>
                 </div>
-                <div class="card-body">
-                  <div class="chart">
-                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                <div class="contact">
+                  <div class="info-box">
+               
+                    <h3>Conre, Texas</h3>
+                    <h2 style="color:#8499b1">$1,500</h2>
                   </div>
                 </div>
-                <!-- /.card-body -->
+                <div class=" contact">
+                  <div class="info-box">
+               
+                    <h3>The Woodlands, Texas</h3>
+                    <h2 style="color:#2c363f">$1,500</h2>
+                  </div>
+                  <div class="header">
+                    <p class="card-title text-center" style="font-size:smaller;">Las rentas en Conroe, TX, son un 36 % más bajo que en The Woodlands, TX</p>
+    
+                  </div>
+                </div>
               </div>
               </div>
             </div>
@@ -537,19 +548,34 @@
 
       </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
+       <!-- ======= About Section ======= -->
+       <section id="Economía" class="about">
+        <div class="container">
+          <div class="section-title">
+            <span>Mercado Inmobiliario</span>
+            <h2>Mercado Inmobiliario</h2>
+            <!-- <p>Downtonw</p> -->
+          </div>
+  
+  
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+              <img src="assets/img/inmobiliario.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" style="text-align: justify;">
+       
+              <p style="text-align: justify;">
+                Las tendencias del mercado en el área de Conroe y Montgomery, como el aumento de las tasas de interés, los alquileres fluctuantes y las ventas rápidas de viviendas, convirtieron al área en un objetivo para los compradores institucionales; ya que en 2019-2022 las tasas hipotecarias estaban por debajo del 3% y de repente en 2022 están por encima del 6%, duplicando las tasas de interés, por lo que las personas difícilmente califican para la casa que querían comprar, y se ven orilladas a alquilar.
+              </p>
+              <p style="text-align: justify;">
+               <mark> <b> Hoy en día la construcción para alquilar [Buid-to-Rent]</b> </mark>puede considerarse como una “ganancia inesperada” para el retorno de la inversión; ya que permite a los inversores controlar el costo y la tasa de absorción, por lo que se prevé será el segmento de más rápido crecimiento durante los próximos cinco años. La ciudad de Conroe votó el 26 de mayo para aumentar el ancho mínimo del lote para una subdivisión de 40 pies de ancho a 50 pies.
+               </p>
+      
+            </div>
+          </div>
+  
         </div>
-
-      </div>
-    </section><!-- End Cta Section -->
+      </section><!-- End About Section -->
 
  
 
@@ -558,135 +584,48 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Pricing</span>
-          <h2>Pricing</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Dueños vs Alquileres</span>
+          <h2>Dueños vs Alquileres</h2>
         </div>
 
         <div class="row">
+          <!-- BAR CHART -->
+          <div class="col-lg-6 align-items-stretch" data-aos="fade-up">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title text-center">Propietario vs Renta</h3>
 
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
-            <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+            <div class="card-body">
+              <div class="chart">
+                <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
               </div>
             </div>
+            <!-- /.card-body -->
           </div>
+          </div>
+          <div class="col-lg-6 align-items-stretch" data-aos="fade-up">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title text-center">Precios promedio 2021 - 2022</h3>
 
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+            <div class="card-body">
+              <div class="chart">
+                <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;" class="chartjs-render-monitor"></canvas>
               </div>
             </div>
+            <!-- /.card-body -->
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
           </div>
+    </div>
 
-        </div>
+       
 
       </div>
     </section><!-- End Pricing Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
 
-        <div class="section-title">
-          <span>Team</span>
-          <h2>Team</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -938,7 +877,7 @@ var areaChartOptions = {
 
 
     var barChartCanvas = $('#barChart').get(0).getContext('2d')
-    var barChartData = $.extend(true, {}, areaChartData)
+    var barChartData = $.extend(true, {},  )
     var temp0 = areaChartData.datasets[0]
     // var temp1 = areaChartData.datasets[1]
     // barChartData.datasets[0] = temp1
@@ -1028,6 +967,28 @@ var areaChartOptions = {
       data: donutData,
       options: donutOptions
     })
+    })
+
+    var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+    var stackedBarChartData = $.extend(true, {}, barChartData)
+
+    var stackedBarChartOptions = {
+      responsive              : true,
+      maintainAspectRatio     : false,
+      scales: {
+        xAxes: [{
+          stacked: true,
+        }],
+        yAxes: [{
+          stacked: true
+        }]
+      }
+    }
+
+    new Chart(stackedBarChartCanvas, {
+      type: 'bar',
+      data: stackedBarChartData,
+      options: stackedBarChartOptions
     })
 </script>
 </body>
