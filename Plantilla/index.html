@@ -546,10 +546,10 @@
         
         </div>
 
-      </div>
+    
     </section><!-- End Services Section -->
        <!-- ======= About Section ======= -->
-       <section id="Economía" class="about">
+       <section id="MercadoInmobiliario" class="about">
         <div class="container">
           <div class="section-title">
             <span>Mercado Inmobiliario</span>
@@ -607,22 +607,51 @@
           <div class="col-lg-6 align-items-stretch" data-aos="fade-up">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title text-center">Precios promedio 2021 - 2022</h3>
+              <h3 class="card-title text-center">Detalles </h3>
 
+             
             </div>
             <div class="card-body">
-              <div class="chart">
-                <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;" class="chartjs-render-monitor"></canvas>
-              </div>
+            <div class="row text-center">
+              <table style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;">
+                <tbody>
+                  <tr>
+                  <td><b>All</b></td>
+                  <td>54.4%</td>
+                  <td>45.5%</td>
+                </tr>
+                  <tr style="background-color: rgb(241, 241, 241);">
+                  <td><b>Female</b></td>
+                  <td>40.4%</td>
+                  <td>59.6%</td>
+                </tr>
+                  <tr>
+                  <td><b>Male</b></td>
+                  <td>39.4%</td>
+                  <td>60.6%</td>
+                </tr>
+                  <tr>
+                  <td><b>Married</b></td>
+                  <td>74.3%</td>
+                  <td>25.7%</td>
+                </tr>
+                  <tr>
+                  <td><b>Non Family</b></td>
+                  <td>34.0%</td>
+                  <td>66.0%</td>
+                </tr>
+                <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
             </div>
             <!-- /.card-body -->
           </div>
           </div>
     </div>
 
-       
-
-      </div>
+      
     </section><!-- End Pricing Section -->
 
 
@@ -855,6 +884,34 @@ var areaChartData2 = {
   ],
 }
 
+var datosStack = {
+      labels  : ['All', 'Female', 'Male', 'Married', 'Non Family'],
+      datasets: [
+        {
+          label               : 'Owner',
+          backgroundColor     : 'rgba(60,141,188,0.9)',
+          borderColor         : 'rgba(60,141,188,0.8)',
+          pointRadius          : false,
+          pointColor          : '#3b8bba',
+          pointStrokeColor    : 'rgba(60,141,188,1)',
+          pointHighlightFill  : '#fff',
+          pointHighlightStroke: 'rgba(60,141,188,1)',
+          data                : [54.5, 40.4, 39.4, 74.3, 34]
+        },
+        {
+          label               : 'Renter',
+          backgroundColor     : 'rgba(210, 214, 222, 1)',
+          borderColor         : 'rgba(210, 214, 222, 1)',
+          pointRadius         : false,
+          pointColor          : 'rgba(210, 214, 222, 1)',
+          pointStrokeColor    : '#c1c7d1',
+          pointHighlightFill  : '#fff',
+          pointHighlightStroke: 'rgba(220,220,220,1)',
+          data                : [45.5, 59.6, 60.6, 25.7, 66]
+        },
+      ]
+    }
+
 var areaChartOptions = {
   maintainAspectRatio : false,
   responsive : true,
@@ -966,6 +1023,41 @@ var areaChartOptions = {
       type: 'doughnut',
       data: donutData,
       options: donutOptions
+    })
+
+    var datosTabla = $.extend(true, {}, datosStack)
+    var temp0 = datosStack.datasets[0]
+    var temp1 = datosStack.datasets[1]
+    datosTabla.datasets[1] = temp1
+    datosTabla.datasets[0] = temp0
+
+    var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+    var stackedBarChartData = $.extend(true, {}, datosTabla)
+
+    var stackedBarChartOptions = {
+      responsive              : true,
+      maintainAspectRatio     : false,
+      scales: {
+        xAxes: [{
+          stacked: true,
+          gridLines: {
+                display:false
+            },
+       
+        }],
+        yAxes: [{
+          stacked: true,
+        
+      
+        }]
+      }
+    }
+
+    new Chart(stackedBarChartCanvas, {
+      type: 'bar',
+      data: stackedBarChartData,
+      options: stackedBarChartOptions,
+
     })
     })
 </script>
