@@ -479,6 +479,26 @@ h6 {
   border-color: #dca01b;
 }
 
+#aboutus_marygold .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  border: 2px solid #dca01b;
+  color: #dca01b;
+}
+
+#aboutus_marygold .btn-get-started:hover {
+  background: #dca01b;
+  border-color: #dca01b;
+  color: #fff;
+}
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
