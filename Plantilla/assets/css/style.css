@@ -166,6 +166,16 @@ h6 {
   transition: 0.3s;
 }
 
+/* @media screen and (max-width: 768px) {
+  .social-links2{
+    color: rgba(255, 255, 255, 0.6);
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+  }
+} */
+
 #topbar .social-links a:hover {
   color: #fff;
 }
