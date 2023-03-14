@@ -73,14 +73,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#"><span>LANGUAGE</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span id="txtMenuLamguage">LANGUAGE</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#about" class="nav-link scrollto"><img src="./assets/img/usa.png" style="height: 25px;"></a></li>
-              <li><a href="#about" class="nav-link scrollto"><img src="./assets/img/mexico.png" style="height: 25px;"></a></li>
+              <li><a href="#about" class=" btnLanguage" id="1"><img src="./assets/img/usa.png" style="height: 25px;"></a></li>
+              <li><a href="#about" class=" btnLanguage" id="2"><img src="./assets/img/mexico.png" style="height: 25px;"></a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto active" href="#about">ABOUT US</a></li>
-          <li class="dropdown"><a href="#"><span>PROJECT</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="#about" id="txtMenuAboutus">ABOUT US</a></li>
+          <li class="dropdown"><a href="#"><span id="txtMenuProject">PROJECT</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#marygoldHolmes" class="nav-link scrollto">Mary Gold</a></li>
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -97,8 +97,8 @@
               <li><a href="#">Drop Down 4</a></li> -->
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#partners">PARTNERS</a></li>
-          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+          <li><a class="nav-link scrollto" href="#partners" id="txtMenuPartners">PARTNERS</a></li>
+          <li><a class="nav-link scrollto" href="#contact" id="txtMenuContact">CONTACT</a></li>
           <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -112,10 +112,10 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500" id="principal">
       <h1 style="color:#dca01b;">Artemis One Dev</h1>
       <h2>"Developing the future"</h2>
-      <a href="#about" class="btn-get-started scrollto">Know more...</a>
+      <a href="#about" class="btn-get-started scrollto" id="btnKnowMore">Know more...</a>
     </div>
   </section><!-- End Hero -->
 
@@ -126,8 +126,8 @@
       <div class="container">
 
         <div class="section-title">
-          <span>ABOUT US</span>
-          <h2>ABOUT US</h2>
+          <span class="spanAboutus">ABOUT US</span>
+          <h2 class="spanAboutus">ABOUT US</h2>
           <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
@@ -136,14 +136,14 @@
             <img src="assets/img/aboutus.JPG" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3 style="color:#dca01b;">Real State Development</h3>
+            <h3 style="color:#dca01b;" id="txtTitulo">Real State Development</h3>
              <!-- <p class="fst-italic">
               Real State Development
             </p> -->
             <ul>
-              <li style="text-align: justify;"><i class="bi bi-check-circle"></i>A real estate developer carries out the integral planning of a project, prepares the business plan, ensures the sources of financing, coordinates the marketing and sales strategy, supervises the construction, coordinates the deliveries of the properties.</li>
-              <li style="text-align: justify;"><i class="bi bi-check-circle"></i>The developer converts, through processes of innovation and creativity, ideas on paper and Excel proformas, into real estate projects.</li>
-              <li style="text-align: justify;"><i class="bi bi-check-circle"></i>Search for land, form a team (architects, engineers, etc.), coordinate the design, process licenses and permits, seek financing, coordinate the construction and delivery of the properties.</li>
+              <li style="text-align: justify; display: flex;"><p id="txtAboutus1">A real estate developer carries out the integral planning of a project, prepares the business plan, ensures the sources of financing, coordinates the marketing and sales strategy, supervises the construction, coordinates the deliveries of the properties.</p></li>
+              <li style="text-align: justify; display: flex;"><p id="txtAboutus2">The developer converts, through processes of innovation and creativity, ideas on paper and Excel proformas, into real estate projects.</p></li>
+              <li style="text-align: justify; display: flex;"><p id="txtAboutus3">Search for land, form a team (architects, engineers, etc.), coordinate the design, process licenses and permits, seek financing, coordinate the construction and delivery of the properties.</p></li>
             </ul>
             
           </div>
@@ -160,14 +160,14 @@
         
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-right">
             <h3 style="color:#dca01b;">Mary Gold Holmes</h3>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;" id="txtProject1">
               Currently, commercial development in the area is focused on the I-45 North corridor, so visitors or residents have to travel more than 4 miles or more to access shopping centers in The Woodlands.
             </p>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;" id="txtProject2">
               The subject market area is approximately 40% developed, with a general mix of low-density and predominantly residential supporting commercial interests. Commercial uses are generally along major traffic arteries or in nearby planned business parks within The Woodlands-Conroe.
              </p>
              <div id="aboutus_marygold" class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-                <a href="./marygold.html" target="_blank" class="btn-get-started scrollto">Know more...</a>
+                <a href="./marygold.html" target="_blank" class="btn-get-started scrollto" id="txtProjectKnowmore">Know more...</a>
              </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-left">
@@ -184,8 +184,8 @@
       <div class="container">
 
         <div class="section-title">
-          <span>PARTNERS</span>
-          <h2>PARTNERS</h2>
+          <span class="spanPartners">PARTNERS</span>
+          <h2 class="spanPartners">PARTNERS</h2>
           <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
@@ -195,7 +195,7 @@
               <img src="assets/img/team/logo-adds.png" alt="">
               <!-- <h4>Walter White</h4>
               <span>Chief Executive Officer</span> -->
-              <p>
+              <p id="txtAdds">
                 In Real Estate, we create communities. As a leading company in our sector, we develop innovative proposals that integrate with the environment and offer luxury, high quality and sustainability options.
               </p>
               <!-- <div class="social">
@@ -212,7 +212,7 @@
               <img src="assets/img/team/logo_onboard.png" alt="" style="margin-bottom: 20px;">
               <!-- <h4>Sarah Jhinson</h4>
               <span>Product Manager</span> -->
-              <p>
+              <p id="txtOnboard">
                 Group in constant growth, with extensive knowledge of the market where it invests and with the direct participation of the owners in the operation and administration of the businesses.
               </p>
               <!-- <div class="social">
@@ -229,7 +229,7 @@
               <!-- <img src="assets/img/team/team-3.jpg" alt=""> -->
               <h4 style="margin: 20px 0 68px 0;">EMPRESA JERRY</h4>
               <!-- <span>CTO</span> -->
-              <p>
+              <p id="txtJerry">
                 Outstanding leaders of the Spanish real estate industry, who have extensive experience in the real estate sector in Mexico and Spain.
               </p>
               <!-- <div class="social">
@@ -820,8 +820,8 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
+          <span class="spanContact">Contact</span>
+          <h2 class="spanContact">Contact</h2>
           <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
@@ -829,7 +829,7 @@
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
+              <h3 id="txtDireccion">Our Address</h3>
               <p>25903 Oak Ridge Drive, Spring, Texas 77380</p>
             </div>
           </div>
@@ -837,7 +837,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
+              <h3 id="txtEmail">Email Us</h3>
               <p>administration@arteminsone.net</p>
             </div>
           </div>
@@ -845,7 +845,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
+              <h3 id="txtTelefono">Call Us</h3>
               <p> +1 832 292 2005</p>
             </div>
           </div>
@@ -872,14 +872,14 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" id="btnEnviarMensaje">Send Message</button></div>
             </form>
           </div>
 
@@ -982,10 +982,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="language.js"></script>
 <script>
+
+
+    $(".btnLanguage").click(function(){
+      var lang = $(this).attr("id")
+      language(lang)
+    })
+
+
+    
+    
     $(function () {
-
-
 
 var areaChartData = {
   labels  : ['','$900', '$1,000', '$1,100', '$1,200', '$1,400', '$1,500', '$2,000 +'],
