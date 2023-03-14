@@ -63,9 +63,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-      
-          <li><a class="nav-link scrollto" href="./index.html">HOME</a></li>
-          <li><a class="nav-link scrollto" href="./marygold.html#contact">CONTACT</a></li>
+          <li class="dropdown"><a href="#"><span id="txtMenuLamguage">LANGUAGE</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#marygold" class="scrollto btnLanguage" id="1"><img src="./assets/img/usa.png" style="height: 25px;"></a></li>
+              <li><a href="#marygold" class="scrollto btnLanguage" id="2"><img src="./assets/img/mexico.png" style="height: 25px;"></a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" id="txtMenuHome" href="./index.html">HOME</a></li>
+          <li><a class="nav-link scrollto" id="txtMenuContact" href="./marygold.html#contact">CONTACT</a></li>
           <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -116,7 +121,7 @@
       </div>
       <div class="row">
         <div class="col content" data-aos="fade-right" style="text-align: justify;">
-          <p style="text-align: justify;">
+          <p style="text-align: justify;" id="txtTextoMarygold">
             The property consists of 19 acres located on the eastern portion of Loop 336, which surrounds Conroe. The circuit has an average daily traffic of 20 to 30 thousand cars. The property has 872 feet of frontage on Loop 336, <mark><b> so road visibility is exceptional.</b></mark>
           </p>
         </div>
@@ -137,8 +142,8 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
+          <span class="spanContact">Contact</span>
+          <h2 class="spanContact">Contact</h2>
           <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
@@ -146,7 +151,7 @@
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
+              <h3 id="txtDireccion">Our Address</h3>
               <p>25903 Oak Ridge Drive, Spring, Texas 77380</p>
             </div>
           </div>
@@ -154,7 +159,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
+              <h3 id="txtEmail">Email Us</h3>
               <p>administration@arteminsone.net</p>
             </div>
           </div>
@@ -162,7 +167,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
+              <h3 id="txtTelefono">Call Us</h3>
               <p> +1 832 292 2005</p>
             </div>
           </div>
@@ -189,14 +194,14 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" id="btnEnviarMensaje">Send Message</button></div>
             </form>
           </div>
 
@@ -291,9 +296,18 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script src="/Plantilla/assets/apis/plugins/jquery/jquery.min.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="languageMG.js"></script>
 
+  <script>
+     $(".btnLanguage").click(function(){
+      var lang = $(this).attr("id")
+      languageMG(lang)
+    })
+  </script>
 </body>
 
 </html>
