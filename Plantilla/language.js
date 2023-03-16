@@ -4,7 +4,7 @@
 
 function language(lang){
     if (lang==1){
-        $("#txtMenuLamguage").text("LANGUAGE")
+        // $("#txtMenuLamguage").text("LANGUAGE")
         $("#txtMenuAboutus").text("ABOUT US")
         $("#txtMenuProject").text("PROJECT")
         $("#txtMenuPartners").text("PARTNERS")
@@ -15,19 +15,20 @@ function language(lang){
         // Seccion About us
         $(".spanAboutus").text("ABOUT US")
         $("#txtTitulo").text("Real State Development")
-        $("#txtAboutus1").text("A real estate developer carries out the integral planning of a project, prepares the business plan, ensures the sources of financing, coordinates the marketing and sales strategy, supervises the construction, coordinates the deliveries of the properties.")
-        $("#txtAboutus2").text("The developer converts, through processes of innovation and creativity, ideas on paper and Excel proformas, into real estate projects.")
-        $("#txtAboutus3").text("Search for land, form a team (architects, engineers, etc.), coordinate the design, process licenses and permits, seek financing, coordinate the construction and delivery of the properties.")
+        $("#txtAboutus1").text("Artemis One Development is a real estate developer focused on the construction sector in the United States, made up of a team of experts with more than 15 years in the disciplines of construction, risk assessment, and administrative and financial management; both in the United States and in Mexico.")
+        $("#txtAboutus2").text("Our formula is based on knowing exactly what our clients want; And thus, by understanding what they are looking for, knowing their real needs and adjusting every detail to their tastes, it allows us to offer them the projects they have dreamed of, automatically generating a better quality of life for them.")
+        // $("#txtAboutus3").text("Search for land, form a team (architects, engineers, etc.), coordinate the design, process licenses and permits, seek financing, coordinate the construction and delivery of the properties.")
 
         // Seccion MaryGold
-        $("#txtProject1").text("Currently, commercial development in the area is focused on the I-45 North corridor, so visitors or residents have to travel more than 4 miles or more to access shopping centers in The Woodlands.")
-        $("#txtProject2").text("The subject market area is approximately 40% developed, with a general mix of low-density and predominantly residential supporting commercial interests. Commercial uses are generally along major traffic arteries or in nearby planned business parks within The Woodlands-Conroe.")
+        $(".spanProjects").text("PROJECTS")
+        $("#txtProject1").text("MaryGold is a housing complex construction project on Loop 336 in the city of Conroe; The project is designed to be marketed under the 'Build to Rent' model.")
+        $("#txtProject2").text("The subdivision will have a construction of 200 units distributed in buildings with 1, 2 and 3 bedrooms; each unit will be independent and will have a size between 750 and 1,200 square feet, and will also have different amenities for the tastes of the whole family.")
         $("#txtProjectKnowmore").text("KNOW MORE...")
 
         // Seccion Partners
         $(".spanPartners").text("PARTNERS")
-        $("#txtAdds").text("In Real Estate, we create communities. As a leading company in our sector, we develop innovative proposals that integrate with the environment and offer luxury, high quality and sustainability options.")
-        $("#txtOnboard").text("Group in constant growth, with extensive knowledge of the market where it invests and with the direct participation of the owners in the operation and administration of the businesses.")
+        $("#txtAdds").text("Development, management and construction company of real estate projects formed from the strategic association of ADD Valant and MALLK Management LLC. The company's partners have successfully operated in the Houston area for the past fifteen years working on small to medium scale construction, repair and remodeling projects on residential, commercial and office contracts.")
+        $("#txtOnboard").text("Company backed by a trajectory of more than thirty years, during which they have perfected their expertise and developed the necessary tools and relationships that allow us to guarantee security and stability for the growth of your assets.")
         $("#txtJerry").text("Outstanding leaders of the Spanish real estate industry, who have extensive experience in the real estate sector in Mexico and Spain.")
 
         // Contacto
@@ -43,8 +44,8 @@ function language(lang){
         $("#btnEnviarMensaje").text("Send Message")
 
     }else if(lang==2){
-        $("#txtMenuLamguage").text("IDIOMA")
-        $("#txtMenuAboutus").text("ACERCA DE")
+        // $("#txtMenuLamguage").text("IDIOMA")
+        $("#txtMenuAboutus").text("NOSOTROS")
         $("#txtMenuProject").text("PROYECTOS")
         $("#txtMenuPartners").text("SOCIOS")
         $("#txtMenuContact").text("CONTACTO")
@@ -54,19 +55,20 @@ function language(lang){
         // Seccion About us
         $(".spanAboutus").text("NOSOTROS")
         $("#txtTitulo").text("Desarrollo Inmobiliario")
-        $("#txtAboutus1").text("Un promotor inmobiliario realiza la planificación integral de un proyecto, elabora el plan de negocio, asegura las fuentes de financiación, coordina la estrategia de marketing y ventas, supervisa la construcción, coordina las entregas de los inmuebles.")
-        $("#txtAboutus2").text("El promotor convierte, a través de procesos de innovación y creatividad, ideas en papel y proformas de Excel, en proyectos inmobiliarios.")
-        $("#txtAboutus3").text("Buscar terrenos, formar equipo (arquitectos, ingenieros, etc.), coordinar el diseño, tramitar licencias y permisos, buscar financiamiento, coordinar la construcción y entrega de las propiedades.")
+        $("#txtAboutus1").text("Artemis One Development es una desarrolladora inmobiliaria enfocada al sector de la construcción en Estados Unidos, conformado por un equipo de expertos con más de 15 años en las disciplinas de la construcción, asesoría de riesgos y, la gestión administrativa y financiera; tanto en Estados Unidos como en México.")
+        $("#txtAboutus2").text("Nuestra fórmula parte de saber exactamente lo que nuestros clientes quieren; y así, al entender lo que buscan, conocer sus necesidades reales y ajustar cada detalle a sus gustos, nos permite brindarles los proyectos como los han soñado, generándoles automáticamente una mejor calidad de vida.")
+        // $("#txtAboutus3").text("Buscar terrenos, formar equipo (arquitectos, ingenieros, etc.), coordinar el diseño, tramitar licencias y permisos, buscar financiamiento, coordinar la construcción y entrega de las propiedades.")
 
         // Seccion MaryGold
-        $("#txtProject1").text("Actualmente, el desarrollo comercial en el área se concentra en el corredor I-45 Norte, por lo que los visitantes o residentes deben viajar más de 4 millas o más para acceder a los centros comerciales en The Woodlands.")
-        $("#txtProject2").text("El área de mercado en cuestión está desarrollada aproximadamente en un 40 %, con una combinación general de intereses comerciales de apoyo predominantemente residenciales y de baja densidad. Los usos comerciales generalmente se encuentran a lo largo de las principales arterias de tráfico o en parques comerciales planificados cercanos dentro de The Woodlands-Conroe.")
+        $(".spanProjects").text("PROYECTOS")
+        $("#txtProject1").text("MaryGold es un proyecto de construcción de un complejo habitacional sobre el Loop 336 de la ciudad de Conroe; el proyecto está diseñado para comercializarse bajo el modelo 'Build to Rent'.")
+        $("#txtProject2").text("La subdivisión contará con una construcción de 200 unidades distribuidas en inmuebles de 1, 2 y 3 recámaras; cada unidad será independiente y tendrán un tamaño de entre 750 y 1,200 pies cuadrados, además contará con diferentes amenidades para gustos de toda la familia.")
         $("#txtProjectKnowmore").text("Saber más...")
 
         // Seccion Partners
         $(".spanPartners").text("SOCIOS")
-        $("#txtAdds").text("En Real Estate creamos comunidades. Como empresa líder en nuestro sector, desarrollamos propuestas innovadoras que se integran con el entorno y ofrecen opciones de lujo, alta calidad y sostenibilidad.")
-        $("#txtOnboard").text("Grupo en constante crecimiento, con amplio conocimiento del mercado donde invierte y con participación directa de los propietarios en la operación y administración de los negocios.")
+        $("#txtAdds").text("Empresa de desarrollo, gestión y construcción de proyectos inmobiliarios formada a partir de la asociación estratégica de ADD Valant y MALLK Management LLC. Los socios de la compañia han operado con éxito en el área de Houston durante los últimos quince años trabajando en proyectps de construcción, reparación y remodelación a pequeña y mediana escala en contratos residenciales, comerciales y oficinas.")
+        $("#txtOnboard").text("Compañía respaldada por una trayectoria de más de treinta años, durante los cuales han perfeccionado el expertise y desarrollando las herramientas y las relaciones necesarias que nos permitan garantizar seguridad y estabilidad para el crecimiento de tu patrimonio.")
         $("#txtJerry").text("Destacados líderes de la industria inmobiliaria española, que cuentan con una amplia experiencia en el sector inmobiliario en México y España.")
 
         // Contacto
