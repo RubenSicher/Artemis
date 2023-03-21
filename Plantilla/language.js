@@ -15,7 +15,7 @@ function language(lang){
         // Seccion About us
         $(".spanAboutus").text("ABOUT US")
         $("#txtTitulo").text("Real State Development")
-        $("#txtAboutus1").text("Artemis One Development is a real estate developer focused on the construction sector in the United States, made up of a team of experts with more than 15 years in the disciplines of construction, risk assessment, and administrative and financial management; both in the United States and in Mexico.")
+        $("#txtAboutus1").text("We are a real estate developer that offers its services to the construction sector in the southern United States, made up of a team of experts with more than 15 years in the disciplines of construction, risk assessment and administrative and financial management; both in the United States and in Mexico.")
         $("#txtAboutus2").text("Our formula is based on knowing exactly what our clients want; And thus, by understanding what they are looking for, knowing their real needs and adjusting every detail to their tastes, it allows us to offer them the projects they have dreamed of, automatically generating a better quality of life for them.")
         // $("#txtAboutus3").text("Search for land, form a team (architects, engineers, etc.), coordinate the design, process licenses and permits, seek financing, coordinate the construction and delivery of the properties.")
 
@@ -55,7 +55,7 @@ function language(lang){
         // Seccion About us
         $(".spanAboutus").text("NOSOTROS")
         $("#txtTitulo").text("Desarrollo Inmobiliario")
-        $("#txtAboutus1").text("Artemis One Development es una desarrolladora inmobiliaria enfocada al sector de la construcción en Estados Unidos, conformado por un equipo de expertos con más de 15 años en las disciplinas de la construcción, asesoría de riesgos y, la gestión administrativa y financiera; tanto en Estados Unidos como en México.")
+        $("#txtAboutus1").text("Somos una desarrolladora inmobiliaria que ofrece sus servicios al sector de la contrucción al sur de los Estados Unidos, conformada por un equipo de expertos con más de 15 años en las disciplinas de construcción, evaluación de riesgos y gestión administrativa y financiera; tanto en estados unidos como en México.")
         $("#txtAboutus2").text("Nuestra fórmula parte de saber exactamente lo que nuestros clientes quieren; y así, al entender lo que buscan, conocer sus necesidades reales y ajustar cada detalle a sus gustos, nos permite brindarles los proyectos como los han soñado, generándoles automáticamente una mejor calidad de vida.")
         // $("#txtAboutus3").text("Buscar terrenos, formar equipo (arquitectos, ingenieros, etc.), coordinar el diseño, tramitar licencias y permisos, buscar financiamiento, coordinar la construcción y entrega de las propiedades.")
 
