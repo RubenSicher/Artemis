@@ -212,15 +212,16 @@ font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
+  width: 15%;
 }
 
 #header .logo a {
   color: #fff;
 }
 
-#header .logo img {
+/* #header .logo img {
   max-height: 40px;
-}
+} */
 
 .scrolled-offset {
   margin-top: 70px;
@@ -1517,4 +1518,11 @@ mark {
   to {
     background-position: 0 0;
   }
+}
+
+@media (max-width: 700px) {
+  #header .logo {
+  width:180px;
+ 
+}
 }
