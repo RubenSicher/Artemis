@@ -1503,7 +1503,7 @@ mark {
   -webkit-animation: 1.5s highlight 1.5s 1 linear forwards;
           animation: 1.5s highlight 1.5s 1 linear forwards;
   background-color: none;
-  background: linear-gradient(90deg, #edd9a3 50%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(90deg, #49bcb488 50%, rgba(255, 255, 255, 0) 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
 }
@@ -1526,3 +1526,12 @@ mark {
  
 }
 }
+
+@media (max-width: 700px) {
+  .onedev {
+font-size: 13px !important;
+ 
+}
+}
+
+
